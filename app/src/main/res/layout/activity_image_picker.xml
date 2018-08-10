@@ -9,8 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/ib_hornets"
@@ -18,18 +19,18 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:src="@drawable/hornets"
+            android:onClick="clickImage"
             android:scaleType="centerCrop"
-            android:onClick="clickImage" />
+            android:src="@drawable/hornets" />
 
         <ImageButton
             android:id="@+id/ib_rockets"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/rockets"
+            android:onClick="clickImage"
             android:scaleType="centerCrop"
-            android:onClick="clickImage" />
+            android:src="@drawable/rockets" />
     </LinearLayout>
 
 </RelativeLayout>
